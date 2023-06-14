@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back to School 🐼🐉</title>
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+    <!-- 
+        remove our stylehseet:
+        <link rel="stylesheet" href="style.css" /> 
+    -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+  </head>
+  <body>
+    <h1>B2S Embedding 🐼🐉</h1>
+    <!-- This is where we put the tableau dashboard -->
+    <div>
+      <button id="exportPDF" class="bigBtn">Export PDF</button>
+      <button id="exportPPT" class="bigBtn">Export PPT</button>
+    </div>
+    <hr />
+    <h2>Filters</h2>
+    <input type="number" placeholder="Min Value" id="minValue" />
+    <input type="number" placeholder="Max Value" id="maxValue" />
+    <button id="FilterButton">Filter!</button>
+    <div id="vizContainer"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
